@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home Page</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+    <img id="headerImage" src="Header3.5.png"   alt="Website Title">
+    
+    <div id="subtitle">
+        <h4>Resume [Pearce Seabrook]</h4>
+    </div>
+
+    <div id="info">
+      <p> Hello friend. I am a 4th year at GT looking for a job at a early-stage startup/VC. I am non-technical(for now) but have experience interning at startups, VCs and IB. More stuff below... </p>
+    </div>
+
+    <div class="header-1">
+      <div class="section1">
+        <h4>Thoughts/Work</h4>
+        <div id="buttons">
+              <a href=https://app.blockworksresearch.com/research/nitro-solanas-vm-enters-the-cosmos>
+                <button class="button" id="1"> SVM Article - Helped Write </button>
+              </a>
+              <a href="https://medium.com/@jpseabrook22/note-example-cleared-piece-from-job-dec-2022-removed-more-nuanced-and-specific-discussion-4da67f3c2a7b">
+                <button class="button" id="2"> Neuromorphic Computing - Work </button>
+              </a>
+              <a href="https://medium.com/@jpseabrook22/vr-digital-immersion-5b98346342a5">
+                <button class="button" id="3"> VR - Personal  </button>
+              </a>
+              <a href="https://drive.google.com/file/d/1FU5QJdOSuJ_pQVnuIRvpGTgkPOoDO5y8/view?usp=sharing">
+                <button class="button" id="4">  Gen AI - Club </button>
+              </a>
+              <a href="https://www.eclipse.builders/blog/what-is-a-rollup ">
+                <button class="button" id="5"> Rollups - Freelance </button>
+              </a>
+
+        </div>
+      </div>
+
+      
+
+      <div class="section2">
+        <h4>More About Me</h4>
+        <div id="block">
+          <video controls>
+            <source src="Resume2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+
+    
+
+ 
+    <div class="header-2">
+        <div class="section2" >
+            <div id="section3">
+              <a href="https://etherscan.io/tx/0xcdd0ad5a7fa8189f73678b9cdce158153a38a4b47859e6c603596214f9035f2f ">
+                <button id="portfolio">Dream Portfolio <br>[tx data]</button>
+              </a>
+            </div>
+        </div>
+        <div class="section2">
+            <div id="section4">
+              <a>
+                <button id="KPI" onclick="openPopup()">KPIs</button>
+              </a>
+            </div>
+        </div>
+        <div class="section2">
+          <div id="section5">
+            <a href="https://pearcephoto.portfoliobox.net/">
+              <button id="photo">Photography <br> [A hobby]</button>
+            </a>
+          </div>
+      </div>
+      <div class="section2">
+        <div id="section6">
+          <a href="https://linktr.ee/PearceSeabrook">
+            <button id="other">Links</button>
+          </a>
+        </div>
+    </div>
+    </div>
+
+    <div id="quote">
+      <h3>"We become what we behold. We shape our tools, and thereafter our tools shape us." - Marshall McLuhan</h3>
+    </div>
+
+    <div id="resume">
+      <a href="resume.html">
+        <button id="resumeButton">Actual(Boring)Resume</button>
+      </a>
+    </div>
+
+    <div id="kpiPopup" class="popup">
+      <div class="popupWrapper"></div>
+        <p>KPIs: <br>
+          - Applications: 42 <br>
+          - Interviews: 0 <br>
+          - Coffee Consumption: 4 a day <br>
+          - Currently working on: Learning to code <br>
+          - Hobbies: Health, Mountain Biking, Fly Fishing <br>
+          - Philosophy: Stoicism <br>
+          - Favorite quote: “try to make everyone you meet smile” <br>
+          - Classification: Proud nerd<br>
+          </p>
+        <button class="exitButton" onclick="closePopup()">Exit</button>
+      </div>
+    </div>
+  
+    <script>
+      function openPopup() {
+        document.getElementById("kpiPopup").style.display = "block";
+      }
+  
+      function closePopup() {
+        document.getElementById("kpiPopup").style.display = "none";
+      }
+    </script>
+    
+    <script>
+      document.getElementById("headerImage").onerror = function() {
+        this.outerHTML = '<span class="altTextheader" >Website Title</span>';
+      };
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,455 @@
+body {
+    margin: 0;
+    background-color: aliceblue;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    color: black;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    display: flex;
+    place-items: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  
+  .altTextheader {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+
+  .header-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 67%;
+  }
+
+  #portfolio, #KPI, #photo, #other {
+    border: 2px solid black;  /* This line adds a black border */
+    margin-top: 10px;
+  }
+
+  .section2 {
+    flex-grow: 1;  /* Allows the item to grow and take up available space */
+    text-align: center;  /* Centers content */
+  }
+
+
+  .header-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    width: 67%;
+
+  }
+
+  .header-1 h4 {
+    text-align: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Courier, monospace;
+    margin-top: -0px;
+    max-width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .header-2 h4 {
+    text-align: center;
+  }
+
+  .button {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Courier, monospace;
+    border: 2px solid black;
+  }
+
+  .popup {
+    display: none;
+    position: fixed;
+    align-items: center;
+    top: 260px;
+    left: 27%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+
+    
+  }
+  .popup p {
+    margin: 0px;
+    width: 180px;
+    height: 200px;
+    font-size: 12px;
+    background-color: #afdeff;
+    padding: 10px;
+    border: 2px solid;
+    border-color: black;
+    position: relative;
+
+  }
+
+  .popupWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25%;
+  }
+
+  .exitButton {
+    cursor: pointer;
+    width: 204px;
+    color: #ffffff;
+    background-color: #ff0000;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Courier, monospace;
+
+  }
+
+
+  #headerImage {
+    display: block;
+    margin: top 0;;
+    width: 67%;
+    height: auto;
+  }
+
+  #info {
+    display: flex;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Courier, monospace;
+    margin-top: -0px;
+    max-width: 67%;
+    flex-wrap: wrap;
+    margin-top: -50px;
+  }
+
+  #subtitle h4 {
+    font-size: 47px;
+    display: flex;
+    font-weight: normal;
+    font-family: Courier, monospace;
+    margin-top: 0px;
+  }
+
+
+  #buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* Keep or adjust border and padding as desired */
+    border: 2px solid black;
+    padding: 10px;
+    /* Optional: set a width or max-width for better control */
+    min-width: 470px;
+    max-width: calc(50% - 10px);
+    height: 150px;
+  }
+
+  #buttons a {
+    display: inline-block;
+    width: 100%;
+
+  }
+
+  #buttons a button { 
+    width: calc(100%);
+    height: 25px;
+  }
+
+  #buttons a:nth-child(1) button {
+    background-color: rgb(5, 217, 255);
+  }
+  #buttons a:nth-child(2) button {
+    background-color: rgb(5, 217, 255);
+  }
+  #buttons a:nth-child(3) button {
+    background-color: rgb(5, 217, 255);
+  }
+  #buttons a:nth-child(4) button {
+    background-color: rgb(5, 217, 255);
+  }
+  #buttons a:nth-child(5) button {
+    background-color: rgb(5, 217, 255);
+  }
+
+  
+  #block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* Keep or adjust border and padding as desired */
+    border: 2px solid black;
+    padding: 10px;
+    /* Optional: set a width or max-width for better control */
+    min-width: 235px;
+    max-width: 280px;
+    height: 150px;
+  }
+
+  #block video {
+    width: auto;
+    height: 170px;
+  }
+
+  #quote {
+    font-size: 16px;
+    text-align: center;
+    font-weight: normal;
+    font-family: Courier, monospace;
+    margin-top: 10px;
+    max-width: 67%;
+  }
+
+  
+  #section3 button, #section4 button, #section5 button, #section6 button {
+    box-sizing: border-box;
+    border-radius: 0px;
+    font-weight: normal;
+
+  }
+
+
+  #section3, #section4, #section5, #section6 {
+    width: 200px;
+  }
+
+  #portfolio, #KPI, #photo, #other {
+    background-color: rgb(5, 255, 168) ;
+  }
+
+  #section3 {
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+    height: 25px;
+  }
+
+  #portfolio{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;  /* Adjust the font size */
+    font-family: Courier, monospace;  /* Set the font type */
+    font-weight: bold;  /* Make it bold */
+    color: black;  /* Set the text color */
+  }
+
+
+
+  #section4 {
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+    height: 25px;
+  }
+
+  #KPI{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;  /* Adjust the font size */
+    font-family: Courier, monospace;  /* Set the font type */
+    font-weight: bold;  /* Make it bold */
+    color: black;  /* Set the text color */
+  }
+
+
+
+  #section5 {
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+    height: 25px;
+  }
+
+  #photo{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;  /* Adjust the font size */
+    font-family: Courier, monospace; /* Set the font type */
+    font-weight: bold;  /* Make it bold */
+    color: black;  /* Set the text color */
+  }
+
+  #section6 {
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+    height: 25px;
+  }
+
+  #other{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;  /* Adjust the font size */
+    font-weight: bold;
+    font-family: Courier, monospace;
+    color: black;  /* Set the text color */
+  }
+  
+  #text {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 200px;
+
+  }
+
+  #resume button {
+    width: 800px;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(112, 137, 168);
+    color: #ffffff;
+    font-size: 16px;
+    font-family: Courier, monospace;
+    margin-bottom: 10px;
+    
+  }
+
+  @media screen and (max-width: 768px) {
+    
+    .section1 h4,.section2 h4 {
+      font-size: 48px;
+      font-weight: normal;
+    }
+    
+    .section1{
+      width: 100%;
+    }
+    
+
+    #subtitle h4 {
+      font-size: 42px;
+    }
+
+    #info {
+      max-width: 90%;
+      display: flex;
+      justify-content: center;
+    }
+
+    #info p {
+     width: 81%;
+     font-size: 24px;
+    }
+    
+    #headerImage {
+      width: 90%;
+      height: auto;
+      margin-top: 20px;
+    }
+
+    .header-2 {
+      width: 90%;  /* Increase this percentage to make it wider */
+      /* ... existing styles ... */
+    }
+    
+  
+
+    .header-2 .section2{
+      width: 90%;  /* Set to 100% */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      text-align: center;
+    }
+
+    #section3, #section4, #section5, #section6 {
+      width: 100%;
+    }
+    #other, #portfolio {
+      height: 60px;
+      font-size: 24px;
+    }
+  
+
+
+    .header-1, .header-2 {
+      flex-direction: column;
+      width: 90%;
+    }
+    
+    #buttons {
+      max-width: 90%;
+      margin: 0 auto; /* Centers block horizontally */
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 220px;
+      border: 0px;
+
+    }
+
+    #buttons a button {
+      width: 100%;
+      height: 40px;
+      margin: 0px;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+
+    #block {
+      margin: 0 auto; /* Centers block horizontally */
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      max-width: 90%;
+      height: auto;
+    }
+    
+    #block video {
+      max-width: 100%;
+      height: auto;
+      align-items: center;
+    }
+    #KPI, #photo {
+      font-size: 14px;
+      display: none;
+    }
+
+    #info {
+      max-width: 100%;
+    }
+    
+    #resume {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 81%;
+
+    }
+
+    #quote {
+      display: none;
+    }
+
+
+    #resume a button{
+      max-width: 100%;
+      height: 100px;
+      font-size: 24px;
+      margin-top: 55px;
+    }
+
+  }
